@@ -1,4 +1,4 @@
-# magic-square
+# Magic Square
 
 Do numbers have shapes, and if these shapes exist – “How can we find all the possible permutations with PHP?”
 
