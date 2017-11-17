@@ -1,6 +1,6 @@
 # magic-square
 
-Do numbers have shapes, and if these shapes exist – “How can we apply it in our world?”
+Do numbers have shapes, and if these shapes exist – “How can we find all the possible permutations with PHP?”
 
 This exercise started a few years back over an idea that numbers in a grid, a surface area – had shapes.
 
@@ -17,11 +17,7 @@ A 2x2 grid has a maximum of 4, a minimum of 1 and is equally distributed into a 
 | 1 | 2 |
 | 3 | 4 |
 
-A 3x3 grid has a maximum of 9, a minimum of 1 and is equally distributed into a grid on a surface
-
-1 2 3
-4 5 6
-7 8 9
+A 3x3 grid looks like the table below:
 
 |  |  |  |
 | --- | --- | --- |
@@ -29,7 +25,7 @@ A 3x3 grid has a maximum of 9, a minimum of 1 and is equally distributed into a 
 | 4 | 5 | 6 |
 | 7 | 8 | 9 |
 
-I think you can see where I am goind with this. The grid is equally distributed on the horizontal axis, and on the veritcal axis.
+I think you can see where I am goind with this. The grid is equally distributed on the horizontal and veritcal axis.
 
 The grids continue to grow in this fashion 4x4, 5x5, 6x6, and so on.
 
