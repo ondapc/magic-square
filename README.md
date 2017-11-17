@@ -12,7 +12,7 @@ A 1x1 grid has only 1 number
 
 A 2x2 grid has a maximum of 4, a minimum of 1 and is equally distributed into a grid on a surface
 
-| Command | Description |
+|  |  |
 | --- | --- |
 | 1 | 2 |
 | 3 | 4 |
