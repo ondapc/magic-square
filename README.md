@@ -12,7 +12,6 @@ A 1x1 grid has only 1 number
 
 A 2x2 grid has a maximum of 4, a minimum of 1 and is equally distributed into a grid on a surface
 
-| ------------- | ------------- |
 | 1  | 2  |
 | 3  | 4  |
 
@@ -21,6 +20,11 @@ A 3x3 grid has a maximum of 9, a minimum of 1 and is equally distributed into a 
 1 2 3
 4 5 6
 7 8 9
+
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
 
 I think you can see where I am goind with this. The grid is equally distributed on the horizontal axis, and on the veritcal axis.
 
