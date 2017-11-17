@@ -23,7 +23,11 @@ A 3x3 grid has a maximum of 9, a minimum of 1 and is equally distributed into a 
 4 5 6
 7 8 9
 
-
+|  |  |  |
+| --- | --- | --- |
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
 
 I think you can see where I am goind with this. The grid is equally distributed on the horizontal axis, and on the veritcal axis.
 
