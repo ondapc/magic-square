@@ -4,6 +4,7 @@ Using PHP to generate a couple magic squares and see their corresponding permuta
 Tested using:
 - Apache
 - PHP 8.1.2
+- Bootstrap 5
 
 A magic square has a grid that is defined by "N" where n has to be greater than 2. The NxN magic square will use the numbers from 1 to N<sup>2</sup> without repeating and can only use N numbers to sum to the magic constant
 
