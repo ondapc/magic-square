@@ -1,6 +1,5 @@
 <?php
 require_once( 'config.php' );
-// require_once( 'cache.php' );
 
 // DEFINE SOME STUFF
 $grid  = (isset($_REQUEST['grid']) && $_REQUEST['grid']) ? $_REQUEST['grid'] : '5';
@@ -9,7 +8,6 @@ $grid = (int) $grid;
 $magic_number = (($grid*$grid+1)*$grid/2);
 $description = '<br/><h5 class="text-center">Magic square has a grid '.$grid.'<b>x</b>'.$grid.' and all diagonals / horizontals / vertical values sum up to '.$magic_number.'</h5>';
 $gridx = $grid.'<b>x</b>'.$grid;
-
 
 // MAGIC SQUARE A
 $matrix_v1 = magic_square_v1($grid);
@@ -28,8 +26,6 @@ $numbers_used_v1 = array_flatten($array_magic_sq_v1);
 $count_occurrences_v1 = array_count_values($numbers_used_v1);
 ksort($count_occurrences_v1);
 
-
-
 // MAGIC SQUARE B
 $matrix_v2 = magic_square_v2($grid);
 $array_v2 = magic_square_array($grid, $matrix_v2);
@@ -46,7 +42,6 @@ for( $i=0; $i<count($array_magic_sq_v2); $i++ ) {
 $numbers_used_v2 = array_flatten($array_magic_sq_v2);
 $count_occurrences_v2 = array_count_values($numbers_used_v2);
 ksort($count_occurrences_v2);
-
 
 // HEATMAP IMAGE OF BOTH RESULTS
 $all_magic_sq_arrays = array_merge_recursive($array_v1, $array_v2);
@@ -68,9 +63,6 @@ ksort($magic_sq_occurrences);
 <link rel="stylesheet" href="/style.css?v=<?php echo VERSION; ?>"/>
 </head>
 <body>
-
-
-
 <div class="p-2"></div>
 <div class="container text-center form">
 <form action="?" method="GET" class="form-inline" >	
@@ -129,7 +121,6 @@ echo $description;
 	</div> 
 </div>
 
-
 <div class="p-2"></div>
 <div class="container-fluid text-center">
 	<div class="row">
@@ -139,12 +130,6 @@ echo $description;
 		</div>
 	</div> 
 </div>
-
-
-
-
-
-
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script> 
 </body>
