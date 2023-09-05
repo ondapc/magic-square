@@ -1,4 +1,4 @@
-# magic-square
+# magic-squares
 Using PHP to generate a couple magic squares and see their corresponding permutations while ultimately generating a heatmap of number occurrences. 
 
 Tested using:
