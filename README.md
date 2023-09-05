@@ -22,4 +22,4 @@ Added a validation script to verify that the "Magic Squares" are valid using the
 - Siamese method
 - Albrecht Dürer's method
 - Conway's LUX method
-
+- Strachey method 
