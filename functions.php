@@ -1,5 +1,5 @@
 <?php
-// FLATTENS ARRAY
+// FLATTENS AN ARRAY
 function array_flatten($a) { 
     $ab = array(); 
     
@@ -12,6 +12,16 @@ function array_flatten($a) {
         }
     }
     return $ab;
+}
+
+// INTEGER VALID SET
+function string_integer($int) {
+	if(preg_match('/^\d+$/',$int)) {
+		$int = $int;
+	} else {
+		$int = 5;
+	}
+	return $int;
 }
 
 // VALIDATES A MAGIC SQUARE ARRAY COMPUTES > HORIZONTAL, VERTICAL, AND DIAGONAL SUMS
