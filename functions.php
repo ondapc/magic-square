@@ -76,7 +76,6 @@ function magic_square_diagonal($matrix) {
 	return $arr;
 }
 
-
 // A SWISS KNIFE MAGIC SQUARE SOLUTION (A) >> FOR ALL NUMBERS >= 3
 function magic_square_v1($n) {
 	// Odd order
@@ -185,8 +184,6 @@ function magic_square_v2($n) {
 	}
 	return $arr;	
 }
-
-
 
 // MAP COLORS PASSED
 function color_gradient($HexFrom, $HexTo, $ColorSteps) {
