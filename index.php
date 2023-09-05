@@ -5,7 +5,7 @@ require_once( 'config.php' );
 $grid  = (isset($_REQUEST['grid']) && $_REQUEST['grid']) ? $_REQUEST['grid'] : '5';
 $grid = (int) $grid;
 
-$magic_number = (($grid*$grid+1)*$grid/2);
+$magic_constant = ($grid / 2) * (pow($grid, 2) + 1);
 $description = '<br/><h5 class="text-center">Magic square has a grid '.$grid.'<b>x</b>'.$grid.' and all diagonals / horizontals / vertical values sum up to '.$magic_number.'</h5>';
 $gridx = $grid.'<b>x</b>'.$grid;
 
@@ -48,7 +48,6 @@ $all_magic_sq_arrays = array_merge_recursive($array_v1, $array_v2);
 $magic_sq_occurrences = array_flatten($all_magic_sq_arrays);
 $magic_sq_occurrences = array_count_values($magic_sq_occurrences);
 ksort($magic_sq_occurrences);
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,6 +62,7 @@ ksort($magic_sq_occurrences);
 <link rel="stylesheet" href="/style.css?v=<?php echo VERSION; ?>"/>
 </head>
 <body>
+
 <div class="p-2"></div>
 <div class="container text-center form">
 <form action="?" method="GET" class="form-inline" >	
