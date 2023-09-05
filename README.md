@@ -9,7 +9,7 @@ A magic square has a grid that is defined by "N" where n has to be greater than 
 
 ![image](https://github.com/ondapc/magic-square/assets/26459137/9e202c58-d92c-4d15-9d49-e5615e85d20e)
 
-The sum of all horizontal 
+The sum of all 
 - horizontal
 - vertical
 - diagonal
