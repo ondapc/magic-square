@@ -14,7 +14,7 @@ The sum of all
 - vertical
 - diagonal
 
-Values will equal to:  (($n*$n+1)*$n/2);
+Values will equal to: (int) ($n / 2) * (pow($n, 2) + 1);
 
 Added a validation script to verify that the "Magic Squares" are valid using the algorithms below:
 
