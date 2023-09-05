@@ -3,7 +3,13 @@ require_once( 'config.php' );
 
 // DEFINE SOME STUFF
 $grid = (isset($_REQUEST['grid']) && $_REQUEST['grid']) ? $_REQUEST['grid'] : '5';
-$grid = abs($grid);
+
+// VALID INTEGER INPUT
+if(preg_match('/^\d+$/',$grid)) {
+  $grid = $grid;
+} else {
+  $grid = 5;
+}
 
 $magic_constant = ($grid / 2) * (pow($grid, 2) + 1);
 $description = '<br/><h5 class="text-center">Magic square has a grid '.$grid.'<b>x</b>'.$grid.' and all diagonals / horizontals / vertical values sum up to '.$magic_constant.'</h5>';
