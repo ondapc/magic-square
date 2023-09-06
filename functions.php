@@ -276,8 +276,6 @@ function table_grid_heatmap($array, $grid) {
 	$html[] = '</tr>';
 	$html[] = '</table>';
 	$html[] = '<h6 class="small">N<sup>X</sup> WHERE N = NUMBER AND X = OCCURRENCE RATE</h6>';
-	$html[] = '<h6 class="small">ODD NUMBERS ADD DIAGONALS OR CROSSES</h6>';		
-	$html[] = '<h6 class="small">EVEN NUMBERS ADD DIAGONALS</h6>';	
 	
 	$html[] = '</div>';	
 	return join("\n", $html);
